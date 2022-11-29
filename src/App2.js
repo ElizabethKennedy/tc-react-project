@@ -7,7 +7,7 @@ class App extends Component {
       items: ["Ready", "Set", "GO"],
       task:"",
 
-    }; 
+    };
     this.onSubmit = this.onSubmit.bind(this);
   }
 
@@ -31,7 +31,7 @@ render() {
     <div>
       <h2>ToDoItems</h2>
       <div>
-        {/* Controlled Input */}
+         Controlled Input
         <form onSubmit={this.onSubmit}>
         <input
           type="text"
@@ -44,17 +44,17 @@ render() {
           </form>
       </div>
       <ul>
-        {/* rendered list */}
+        
         {this.state.items.map((item, idx) => {
           return <li key={idx}>{item}</li>
         })}
-        
+
       </ul>
     </div>
 )}}
 
 export default App;
-    
+
 
 
 

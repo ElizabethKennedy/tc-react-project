@@ -1,51 +1,5 @@
-import React, { useState } from "react";
-import './App.css';
-
-function App (props){
-
-  const [list, setList] = useState(["Ready", "Set", "GO!"]);
-  const [text,setText] = useState([""]);
-
-function onSubmit(event){
-event.preventDefault();
-setList([...list, text]);
-}
-
-  return (
-    <div className="App">
-      <h1>Get to know <span className="subtle">Ghibli Studios</span></h1>
-      <h3>Enter your favorites below to make a list:</h3>
-      <form onSubmit={onSubmit}>
-      <input
-            type="text"
-            value={text}
-            onChange={(event) => {
-              setText(event.target.value);
-            }} />
-            <button type="submit">Add</button>
-      </form>
-      <ul>
-        {list.map((ele, index) => 
-          <li key={index}>{ele}</li>
-        )}
-      </ul>
-          
-    </div>
-  );
-};
-
-export default App;
-
-
-
-
-/*import { Component } from "react";
-import FilmsList from "./components/FilmsList";
-import StudioGhibliList from "./components/StudioGhibliList";
-import Item from "./components/Item";
-import List from "./components/List";
-
-export default App;
+/*import React, { useState, useEffect } from 'react';
+export default HomePage;
 
 /*class App extends Component {
   constructor(props){
@@ -149,7 +103,7 @@ import { useState, useEffect } from "react";*/
       </div>
     </div>
   );
-}*/
+}
 
 
 

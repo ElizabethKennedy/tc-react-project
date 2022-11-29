@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FilmsList from "./components/FilmsList";
 
 export default class App extends React.Component {
 constructor(props){ 
@@ -48,6 +49,7 @@ onSubmit(event) {
           return <li key={index}>{item}</li>
          })}
         </ul>
+        <FilmsList />
         </div>
         </div>
     );
