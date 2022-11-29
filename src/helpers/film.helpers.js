@@ -1,7 +1,7 @@
 
 
  export function filterFilmsByDirector(list, searchDirector){
-    return list.filter(item => item.director == searchDirector);
+    return list.filter(item => item.director === searchDirector);
 }
 
 
