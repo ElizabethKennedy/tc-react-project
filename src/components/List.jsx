@@ -10,7 +10,6 @@ class List extends React.Component {
   componentDidMount() {
     console.log("List - mount");
   }
-
   componentDidUpdate() {
     console.log("List - update");
   }
