@@ -1,0 +1,16 @@
+body {
+    background-color: cyan;
+}
+
+h1 {
+    font-family: 'Cream Cake', 'Trebuchet', sans-serif;
+    font-weight:bold;
+    font-size:large;
+    color:black;
+    font-stretch: expanded;
+    text-align:center;
+}
+
+.controlled-input {
+    text-align:center;
+}
